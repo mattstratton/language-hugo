@@ -4,10 +4,8 @@
   "version": "0.0.0",
   "description": "Hugo language support in Atom",
   "keywords": [
+    "hugo"
   ],
-  "activationCommands": {
-    "atom-workspace": "language-hugo:toggle"
-  },
   "repository": {
     "type": "git",
     "url": "https://github.com/mattstratton/language-hugo"
