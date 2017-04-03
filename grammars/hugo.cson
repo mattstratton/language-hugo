@@ -1,0 +1,34 @@
+'scopeName': 'source.hugo'
+'name': 'Hugo'
+'fileTypes': ['md', 'html']
+'foldingStartMarker':'({{(.*)range(.*)}})|({{(.*)if(.*))'
+'foldingStopMarker':'({{(.*)end(.*)}})'
+
+'patterns': [
+  {
+    'match': '\\b(([0-9]+\\.?[0-9]*)|(\\.[0-9]+))\\b'
+    'name': 'constant.numeric.hugo'
+  },
+  {
+    'match': '\\b(if|else|range|template|with|end|nil|with|define)\\b'
+    'name': "keyword.control.hugo"
+  },
+  {
+    'match': '[.$][\\w]*'
+    'name': 'keyword.other.hugo'
+  },
+  {
+    'match': ':='
+    'name': 'keyword.operator.initialize.hugo'
+  },
+  {
+    'match': '(eq)|(ge)|(le)'
+    'name': 'keyword.operator.hugo'
+  },
+  {
+    'begin': '{{\\/\\*'
+    'end': '\\*\\/}}'
+    'name': 'comment.block.hugo'
+  }
+
+]

@@ -1,0 +1,24 @@
+{
+  "name": "language-hugo",
+  "main": "./lib/language-hugo",
+  "version": "0.0.0",
+  "description": "Hugo language support in Atom",
+  "keywords": [
+  ],
+  "activationCommands": {
+    "atom-workspace": "language-hugo:toggle"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mattstratton/language-hugo"
+  },
+  "bugs": {
+  "url": "https://github.com/mattstratton/linter-cookstyle/issues"
+},
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "dependencies": {
+  }
+}
