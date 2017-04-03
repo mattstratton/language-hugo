@@ -1,0 +1,4 @@
+'.source.hugo':
+  'If Statement':
+    'prefix': 'if'
+    'body': "{{ if }}\n{{end}}"
