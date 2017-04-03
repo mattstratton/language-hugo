@@ -1,0 +1,4 @@
+'.source.hugo':
+  'editor':
+    'commentStart': '{{/* '
+    'commentEnd': ' */}}'
