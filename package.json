@@ -1,20 +1,21 @@
 {
   "name": "language-hugo",
   "version": "0.4.0",
-  "description": "Hugo language support in Atom",
+  "description": "Go templating language support for Hugo",
   "keywords": [
-    "hugo"
+    "hugo",
+    "atom"
   ],
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/mattstratton/language-hugo"
+  "repository": "mattstratton/language-hugo",
+  "scripts": {
+    "release": "standard-version"
   },
-  "bugs": {
-    "url": "https://github.com/mattstratton/language-hugo/issues"
-  },
-  "license": "MIT",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
   },
-  "dependencies": {}
+  "dependencies": {},
+  "devDependencies": {
+    "standard-version": "^4.2.0"
+  },
+  "license": "MIT"
 }
