@@ -1,4 +1,4 @@
-'.source.hugo':
+'.text.html.hugo':
   'if':
     'prefix': 'if'
     'body': '{{ if ${1:condition} }}\n\t\n\n{{ end }}'
