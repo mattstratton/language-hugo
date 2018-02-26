@@ -1,10 +1,8 @@
 {
   "name": "language-hugo",
-  "version": "0.4.0",
+  "version": "0.4.1",
   "description": "Hugo language support in Atom",
-  "keywords": [
-    "hugo"
-  ],
+  "keywords": ["hugo"],
   "repository": {
     "type": "git",
     "url": "https://github.com/mattstratton/language-hugo"
