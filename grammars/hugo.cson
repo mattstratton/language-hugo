@@ -12,6 +12,11 @@
     'include': 'source.gfm'
   }
   {
+    'begin': "{#"
+    'end': "#}"
+    'name': "comment.line.swig"
+  }
+  {
     'begin': '{{<|{{%'
     'beginCaptures':
       '0':
