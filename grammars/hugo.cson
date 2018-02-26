@@ -1,4 +1,4 @@
-'scopeName': 'source.hugo'
+'scopeName': 'text.html.hugo'
 'name': 'Hugo'
 'fileTypes': ['md', 'html']
 'foldingStartMarker':'({{(.*)range(.*)}})|({{(.*)if(.*))'

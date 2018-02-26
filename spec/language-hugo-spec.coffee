@@ -6,8 +6,8 @@ describe "Hugo grammar", ->
       atom.packages.activatePackage("language-hugo")
 
     runs ->
-      grammar = atom.grammars.grammarForScopeName("source.hugo")
+      grammar = atom.grammars.grammarForScopeName("text.html.hugo")
 
   it "parses the grammar", ->
     expect(grammar).toBeTruthy()
-    expect(grammar.scopeName).toBe "source.hugo"
+    expect(grammar.scopeName).toBe "text.html.hugo"

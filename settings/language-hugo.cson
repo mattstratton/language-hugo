@@ -1,4 +1,4 @@
-'.source.hugo':
+'.text.html.hugo':
   'editor':
     'commentStart': '{{/* '
     'commentEnd': ' */}}'
