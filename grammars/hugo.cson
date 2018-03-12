@@ -1,6 +1,6 @@
 'scopeName': 'source.hugo'
 'name': 'Hugo'
-'fileTypes': ['md', 'html']
+'fileTypes': ['md', 'mmark', 'html']
 'foldingStartMarker':'({{(.*)range(.*)}})|({{(.*)if(.*))'
 'foldingStopMarker':'({{(.*)end(.*)}})'
 
@@ -44,11 +44,11 @@
         'name': 'punctuation.section.embedded.end.hugo'
     'patterns': [
       {
-        'match': '\\b(([0-9]+\\.?[0-9]*)|(\\.[0-9]+))\\b'
+        'match': '\\b(([0-9]+\\.?[0-9]*)|(\\.[0-9]+)|(true|false|nil))\\b'
         'name': 'constant.numeric.hugo'
       }
       {
-        'match': '\\b(if|else|range|template|with|end|nil|define|where)\\b'
+        'match': '\\b(if|else|range|template|with|end|define|where)\\b'
         'name': "keyword.control.hugo"
       }
       {
@@ -69,7 +69,7 @@
         'name': 'keyword.operator.initialize.hugo'
       }
       {
-        'match': '\\b(add|delimit|dict|slice|shuffle|echoParam|eq|first|jsonify|last|after|getenv|in|intersect|isset|seq|sort|where|readDir|readFile|imageConfig|int|printf|chomp|dateFormat|emojify|highlight|htmlEscape|htmlUnescape|humanize|lower|markdownify|plainify|pluralize|findRE|replace|replaceRE|safeHTML|safeHTMLAttr|safeCSS|safeJS|singularize|slicestr|truncate|split|string|substr|hasPrefix|title|trim|upper|countwords|countrunes|md5|sha1|sha256|i18n|time|now|absLangURL|relLangURL|absURL|relURL|ref|relref|safeURL|urlize|querify|apply|base64Encode|base64Decode|modBool)\\b'
+        'match': '\\b(add|delimit|dict|slice|shuffle|echoParam|eq|first|jsonify|last|after|getenv|in|intersect|isset|seq|sort|where|readDir|readFile|imageConfig|int|printf|chomp|dateFormat|emojify|highlight|htmlEscape|htmlUnescape|humanize|lower|markdownify|plainify|pluralize|findRE|replace|replaceRE|safeHTML|safeHTMLAttr|safeCSS|safeJS|singularize|slicestr|truncate|split|string|substr|hasPrefix|title|trim|upper|countwords|countrunes|md5|sha1|sha256|i18n|time|now|absLangURL|relLangURL|absURL|relURL|ref|relref|safeURL|urlize|querify|apply|base64Encode|base64Decode|modBool|union|default)\\b'
         'name': 'support.function.builtin.hugo'
       }
 
