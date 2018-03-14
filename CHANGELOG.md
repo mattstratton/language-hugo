@@ -2,5 +2,5 @@
 * Every feature added
 * Every bug fixed
 
-## 0.4.1 - Bug fix
+## 0.5.1 - Bug fix
 * Fix issue with HTML autocomplete compatability
