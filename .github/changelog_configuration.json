@@ -2,15 +2,19 @@
   "categories": [
     {
       "title": "## 🚀 Features",
-      "labels": ["feature"]
+      "labels": ["feature", "enhancement"]
     },
     {
       "title": "## 🐛 Fixes",
-      "labels": ["fix"]
+      "labels": ["fix", "bug"]
     },
     {
       "title": "## 🧪 Tests",
       "labels": ["test"]
+    },
+    {
+      "title": "## Chores",
+      "labels": ["chore"]
     }
   ],
   "ignore_labels": [
