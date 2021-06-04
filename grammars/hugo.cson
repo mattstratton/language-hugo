@@ -1,12 +1,15 @@
 'scopeName': 'text.html.hugo'
 'name': 'Hugo'
 'fileTypes': ['md', 'mmark', 'html']
-'foldingStartMarker':'({{(.*)range(.*)}})|({{(.*)if(.*))'
+'foldingStartMarker':'({{(.*)range(.*)}})|({{(.*)if(.*))|({{(.*)with(.*))'
 'foldingStopMarker':'({{(.*)end(.*)}})'
 
 'patterns': [
   {
     'include': 'text.html.basic'
+  }
+  {
+    'include': 'source.gotemplate'
   }
   {
     'include': 'source.gfm'
