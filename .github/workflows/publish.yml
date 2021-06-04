@@ -24,3 +24,9 @@ jobs:
           body: ${{steps.github_release.outputs.changelog}}
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Publish extension
+        uses: tzvetkoff/apm-action@master
+        with:
+          args: apm publish -t ${{ github.ref }}
+        env:
+          ATOM_ACCESS_TOKEN: ${{ secrets.ATOM_ACCESS_TOKEN }}
