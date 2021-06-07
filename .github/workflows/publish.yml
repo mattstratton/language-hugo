@@ -24,6 +24,7 @@ jobs:
           body: ${{steps.github_release.outputs.changelog}}
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - uses: actions/checkout@v1
       - uses: UziTech/action-setup-atom@v2
       - name: Publish package
         run: apm publish -t ${{ github.ref }}
