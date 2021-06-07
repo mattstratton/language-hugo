@@ -24,9 +24,15 @@ jobs:
           body: ${{steps.github_release.outputs.changelog}}
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      - uses: actions/checkout@v1
+      - name: Get tag name
+        id: get_tag_name
+        run: echo ::set-output name=TAG_NAME::${GITHUB_REF/refs\/tags\//}
+      - name: Checkout code
+        uses: actions/checkout@master
+        with:
+          ref: ${{ steps.get_tag_name.outputs.TAG_NAME }}
       - uses: UziTech/action-setup-atom@v2
       - name: Publish package
-        run: apm publish -t ${{ github.ref }}
+        run: apm publish -t ${{ steps.get_tag_name.outputs.TAG_NAME }}
         env:
           ATOM_ACCESS_TOKEN: ${{ secrets.ATOM_ACCESS_TOKEN }}
