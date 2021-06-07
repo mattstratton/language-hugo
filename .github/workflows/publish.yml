@@ -24,3 +24,9 @@ jobs:
           body: ${{steps.github_release.outputs.changelog}}
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Publish package
+        uses: UziTech/action-setup-atom@v2
+        with: 
+        run: apm publish -t ${{ github.ref }}
+        env:
+          ATOM_ACCESS_TOKEN: ${{ secrets.ATOM_ACCESS_TOKEN }}
