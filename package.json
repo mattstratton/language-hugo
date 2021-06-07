@@ -1,6 +1,6 @@
 {
   "name": "language-hugo",
-  "version": "0.5.11",
+  "version": "0.5.12",
   "description": "Hugo language support in Atom",
   "keywords": [
     "hugo"
@@ -15,6 +15,5 @@
   "license": "MIT",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
-  },
-  "dependencies": {}
+  }
 }
