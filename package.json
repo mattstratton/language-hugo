@@ -1,6 +1,6 @@
 {
   "name": "language-hugo",
-  "version": "0.5.12",
+  "version": "0.5.13",
   "description": "Hugo language support in Atom",
   "keywords": [
     "hugo"
